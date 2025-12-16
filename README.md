@@ -1,1 +1,4 @@
-# team-final-project-aa
+app
+tests
+terraform
+.github
