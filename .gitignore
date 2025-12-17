@@ -1,38 +1,27 @@
-# ==========================
-# Terraform
-# ==========================
+# Terraform files
 .terraform/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
 
-# Ignore Terraform provider binaries in infra folder
-infra/.terraform/
-
-# ==========================
-# Docker
-# ==========================
+# Local environment files
+.env
+.vscode/
 *.log
-*.env
-docker-compose.override.yml
 
-# ==========================
-# Python
-# ==========================
+# Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js / Python caches (if used)
+node_modules/
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.swp
-*.coverage
-*.pytest_cache/
 
-# ==========================
-# VS Code
-# ==========================
-.vscode/
+# Docker images / containers (optional, if you don’t want to track them)
+docker-compose.override.yml
+*.docker
 
-# ==========================
-# Mac system files
-# ==========================
-.DS_Store
+# GitHub Actions / CI cache (optional)
+.github/workflows/.terraform/
