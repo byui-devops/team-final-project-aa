@@ -1,10 +1,17 @@
-FROM python:3.10-slim
+# Use Python 3.11 base image
+FROM python:3.11-slim
 
+# Set working directory
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Copy app files
+COPY app/ /app/
 
-COPY app ./app
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "app/app.py"]
+# Expose port
+EXPOSE 5000
+
+# Run app
+CMD ["python", "app.py"]

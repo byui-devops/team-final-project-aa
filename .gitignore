@@ -25,3 +25,22 @@ docker-compose.override.yml
 
 # GitHub Actions / CI cache (optional)
 .github/workflows/.terraform/
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# Docker
+*.docker
+docker-compose.override.yml
+
+# macOS
+.DS_Store
