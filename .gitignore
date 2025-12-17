@@ -1,0 +1,10 @@
+# Terraform files to ignore
+infra/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Python / VS Code files
+__pycache__/
+*.pyc
+.vscode/
