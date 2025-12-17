@@ -1,14 +1,14 @@
 recipes = [
     {
         "id": 1,
-        "name": "Spaghetti Bolognese",
-        "ingredients": ["Spaghetti", "Ground Beef", "Tomato Sauce", "Onion", "Garlic"],
-        "instructions": "Cook pasta. Brown beef with onion and garlic. Add tomato sauce. Combine with pasta."
+        "name": "Spaghetti",
+        "ingredients": ["Pasta", "Tomato Sauce", "Garlic"],
+        "instructions": "Boil pasta and mix with sauce."
     },
     {
         "id": 2,
-        "name": "Pancakes",
-        "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Baking Powder"],
-        "instructions": "Mix ingredients. Pour on skillet. Flip when bubbles appear. Serve warm."
+        "name": "Grilled Cheese",
+        "ingredients": ["Bread", "Cheese", "Butter"],
+        "instructions": "Butter bread, add cheese, and grill."
     }
 ]

@@ -1,0 +1,81 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf6f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    background-color: #ff7f50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Recipe List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    background-color: #fff3e0;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+/* Individual Recipe Page */
+.recipe-container {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #ff7f50;
+    margin-top: 20px;
+}
+
+ul.ingredients {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    li, .recipe-container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
