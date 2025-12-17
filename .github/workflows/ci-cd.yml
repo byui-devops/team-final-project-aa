@@ -29,6 +29,8 @@ jobs:
 
     - name: Run unit and integration tests
       run: |
+        # Add project root to PYTHONPATH so 'app' module is recognized
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
         pytest tests/ --maxfail=1 --disable-warnings -v
 
     - name: Build Docker image
