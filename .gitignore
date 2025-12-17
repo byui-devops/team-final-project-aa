@@ -1,10 +1,38 @@
-# Terraform files to ignore
-infra/.terraform/
+# ==========================
+# Terraform
+# ==========================
+.terraform/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
 
-# Python / VS Code files
+# Ignore Terraform provider binaries in infra folder
+infra/.terraform/
+
+# ==========================
+# Docker
+# ==========================
+*.log
+*.env
+docker-compose.override.yml
+
+# ==========================
+# Python
+# ==========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.swp
+*.coverage
+*.pytest_cache/
+
+# ==========================
+# VS Code
+# ==========================
 .vscode/
+
+# ==========================
+# Mac system files
+# ==========================
+.DS_Store
