@@ -2,22 +2,29 @@ name: Release Pipeline
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v2
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.6.2
 
-    - name: Terraform Init
-      run: terraform init
-      working-directory: infra
+      - name: Terraform Init
+        working-directory: infra
+        run: terraform init
 
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
-      working-directory: infra
+      - name: Terraform Apply
+        working-directory: infra
+        run: terraform apply -auto-approve
+        env:
+          AWS_ACCESS_KEY_ID: ${{ASIAW3MEAS2OM4EBMLQ4}}
+          AWS_SECRET_ACCESS_KEY: ${{aYTHvk6fbqONOAaWN2Dtgq0+4xdV0XxcGZWf/Vpq}}
