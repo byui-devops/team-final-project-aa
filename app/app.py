@@ -15,4 +15,4 @@ def recipe(recipe_id):
     return render_template('recipe.html', recipe=recipe)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5000)
